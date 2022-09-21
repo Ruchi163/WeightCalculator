@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Machine</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <div class="nav" id="nav">
+      <h1 class="head">
+        Know Your Weight On Different Planets
+      </h1>  
+    </div>
+    <div class="inputbox" id="inputbox">
+        <!-- <form action=""> -->
+            <input type="number" id="weight" size="50" class="inputt"><br><br>
+            <label for="planets" class="drop">Choose your Planet : </label>
+
+            <select name="planets" id="planets">
+              <option value="Mercury">Mercury</option>
+              <option value="Venus">Venus</option>
+              <option value="Moon">Moon</option>
+              <option value="Mars">Mars</option>
+              <option value="Jupiter">Jupiter</option>
+              <option value="Saturn">Saturn</option>
+              <option value="Uranus">Uranus</option>
+              <option value="Neptune">Neptune</option>
+            </select>
+            <button  value="Submit" class="btn" onclick="cal()">Submit</button>
+          <!-- </form> -->
+    </div>
+    <div id="imgbox">
+        <div class="imgg">
+            <img src="Media/mercury.png" class="img1"/>
+            <img src="Media/venus.png" class="img2"/>
+            <img src="Media/earth.png" class="img1"/>
+            <img src="Media/mars.png" class="img2"/>
+            <img src="Media/jupiter.png" class="img1"/>
+            <img src="Media/saturn.png" class="img2"/>
+            <img src="Media/uranus.png" class="img1"/>
+            <img src="Media/neptune.png" class="img2"/>
+            <img src="Media/moon.png" class="img1"/>
+        </div>
+    </div>
+
+    <div id="answer" class="flex-container">
+        <div class="ansimg12">
+            <p id="ans">Answers</p>
+           
+        </div>
+            <div class="ansimg1">
+                <img src="Media/mercury.png" class="ansimg" id="Mercury" style="display:none;"/>
+                <img src="Media/venus.png" class="ansimg" id="Venus" style="display:none;"/>
+                <img src="Media/moon.png" class="ansimg" id="Moon" style="display:none;"/>
+                <img src="Media/mars.png" class="ansimg" id="Mars" style="display:none;"/>
+                <img src="Media/jupiter.png" class="ansimg" id="Jupiter" style="display:none;"/>
+                <img src="Media/saturn.png" class="ansimg" id="Saturn" style="display:none;"/>
+                <img src="Media/uranus.png" class="ansimg" id="Uranus" style="display:none;"/>
+                <img src="Media/neptune.png" class="ansimg" id="Neptune" style="display:none;"/>
+            
+            </div>
+            
+            <button onclick="done()" class="btn1">Know another weight</button>
+           
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
